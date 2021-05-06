@@ -24,6 +24,7 @@
         .col-md-6 p {
             font-weight: bold;
         }
+
     </style>
 
 </head>
@@ -38,7 +39,26 @@
             <div class="col-12 my-3">
 
                
-               
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h1 class="text-center my-4">Staff password validator</h1>
+                        <!-- <p>Enter password:</p> -->
+                        <div class="form-group">
+                            <div class="row">
+                                <label for="exampleInputEmail1" style="margin-right: 20px;margin-top: 5px;">Enter password:</label>
+                                <input type="text" class="form-control" id="password_input" style="max-width: 400px;" aria-describedby="emailHelp" >
+                            </div>
+
+                            <button type="button" class="btn btn-primary mt-3 " id="check_password">Check Password</button>
+                            
+                            <p style="font-weight: bold;color: black;display: none;" id="valid_password">Password is valid</p>
+                            <p style="font-weight: bold;color: red;display: none;" id="invalid_password">*Invalid format, please reenter</p>
+                          
+                          </div>
+                    </div>
+
+                </div>
 
                 <div class="card">
                     <div class="card-body">
@@ -444,9 +464,549 @@
 
     </div>
 
-  
+    <h2 class="mt-5 text-center mb-4">Menu Options</h2>
+
+    <div class="container-fluid">
 
 
+        <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3">
+
+            <div class="card">
+                <div class="card-body">
+                    <div class="container-fluid">
+
+                        <div class="row">
+
+                            <div class="col-md-6">
+                                <p>Starter</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p>Quantity</p>
+                            </div>
+
+                        </div>
+
+                        <div class="row mt-4">
+
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="starterRadio" id="startercheck1"
+                                        value="option1" >
+                                    <label class="form-check-label" for="exampleRadios1" id="starterlabel1">
+                                        Default radio
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+
+                                    <input type="number" class="form-control" id="starterinput1"
+                                        aria-describedby="emailHelp">
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row mt-4">
+
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="starterRadio" id="startercheck2"
+                                        value="option1" >
+                                    <label class="form-check-label" for="exampleRadios1" id="starterlabel2">
+                                        Default radio
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+
+                                    <input type="number" class="form-control" id="starterinput2"
+                                        aria-describedby="emailHelp">
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row mt-4">
+
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="starterRadio" id="startercheck3"
+                                        value="option1" >
+                                    <label class="form-check-label" for="exampleRadios1" id="starterlabel3">
+                                        Default radio
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+
+                                    <input type="number" class="form-control" id="starterinput3"
+                                        aria-describedby="emailHelp">
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row mt-4">
+
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="starterRadio" id="startercheck4"
+                                        value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1" id="starterlabel4">
+                                        Default radio
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+
+                                    <input type="number" class="form-control" id="starterinput4"
+                                        aria-describedby="emailHelp">
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+
+
+                        <div class="row">
+
+                            <div class="col-md-6">
+                                <p>Main</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p>Quantity</p>
+                            </div>
+
+                        </div>
+
+                        <div class="row mt-4">
+
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="mainRadio" id="maincheck1"
+                                        value="option1" >
+                                    <label class="form-check-label" for="exampleRadios1" id="mainlabel1">
+                                        Default radio
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+
+                                    <input type="number" class="form-control" id="maininput1"
+                                        aria-describedby="emailHelp">
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row mt-4">
+
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="mainRadio" id="maincheck2"
+                                        value="option1" >
+                                    <label class="form-check-label" for="exampleRadios1" id="mainlabel2">
+                                        Default radio
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+
+                                    <input type="number" class="form-control" id="maininput2"
+                                        aria-describedby="emailHelp">
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row mt-4">
+
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="mainRadio" id="maincheck3"
+                                        value="option1" >
+                                    <label class="form-check-label" for="exampleRadios1" id="mainlabel3">
+                                        Default radio
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+
+                                    <input type="number" class="form-control" id="maininput3"
+                                        aria-describedby="emailHelp">
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row mt-4">
+
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="mainRadio" id="maincheck4"
+                                        value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1" id="mainlabel4">
+                                        Default radio
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+
+                                    <input type="number" class="form-control" id="maininput4"
+                                        aria-describedby="emailHelp">
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+
+
+                        <div class="row">
+
+                            <div class="col-md-6">
+                                <p>Dessert</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p>Quantity</p>
+                            </div>
+
+                        </div>
+
+                        <div class="row mt-4">
+
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="dessertRadio" id="dessertcheck1"
+                                        value="option1" >
+                                    <label class="form-check-label" for="exampleRadios1" id="dessertlabel1">
+                                        Default radio
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+
+                                    <input type="number" class="form-control" id="dessertinput1"
+                                        aria-describedby="emailHelp">
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row mt-4">
+
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="dessertRadio" id="dessertcheck2"
+                                        value="option1" >
+                                    <label class="form-check-label" for="exampleRadios1" id="dessertlabel2">
+                                        Default radio
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+
+                                    <input type="number" class="form-control" id="dessertinput2"
+                                        aria-describedby="emailHelp">
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row mt-4">
+
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="dessertRadio" id="dessertcheck3"
+                                        value="option1" >
+                                    <label class="form-check-label" for="exampleRadios1" id="dessertlabel3">
+                                        Default radio
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+
+                                    <input type="number" class="form-control" id="dessertinput3"
+                                        aria-describedby="emailHelp">
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row mt-4">
+
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="dessertRadio" id="dessertcheck4"
+                                        value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1" id="dessertlabel4">
+                                        Default radio
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+
+                                    <input type="number" class="form-control" id="dessertinput4"
+                                        aria-describedby="emailHelp">
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+
+
+                        <div class="row">
+
+                            <div class="col-md-6">
+                                <p>Drink</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p>Quantity</p>
+                            </div>
+
+                        </div>
+
+                        <div class="row mt-4">
+
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="drinkRadio" id="drinkcheck1"
+                                        value="option1" >
+                                    <label class="form-check-label" for="exampleRadios1" id="drinklabel1">
+                                        Default radio
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+
+                                    <input type="number" class="form-control" id="drinkinput1"
+                                        aria-describedby="emailHelp">
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row mt-4">
+
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="drinkRadio" id="drinkcheck2"
+                                        value="option1" >
+                                    <label class="form-check-label" for="exampleRadios1" id="drinklabel2">
+                                        Default radio
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+
+                                    <input type="number" class="form-control" id="drinkinput2"
+                                        aria-describedby="emailHelp">
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row mt-4">
+
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="drinkRadio" id="drinkcheck3"
+                                        value="option1" >
+                                    <label class="form-check-label" for="exampleRadios1" id="drinklabel3">
+                                        Default radio
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+
+                                    <input type="number" class="form-control" id="drinkinput3"
+                                        aria-describedby="emailHelp">
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row mt-4">
+
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="drinkRadio" id="drinkcheck4"
+                                        value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1" id="drinklabel4">
+                                        Default radio
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+
+                                    <input type="number" class="form-control" id="drinkinput4"
+                                        aria-describedby="emailHelp">
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="container">
+                            <h1 class="mt-5 mb-5" style="text-align: center;">Bill</h1>
+                            
+                            <div class="row mt-2">
+                                <div class="col-md-6">
+                                    <p>Total Bill</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        
+                                        <input type="number" class="form-control total_bill_user" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        
+                                      </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row mt-2">
+                                <div class="col-md-6">
+                                    <p>Starters</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        
+                                        <input type="number" class="form-control starter_bill_user" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        
+                                      </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row mt-2">
+                                <div class="col-md-6">
+                                    <p>Main</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        
+                                        <input type="number" class="form-control main_bill_user" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        
+                                      </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row mt-2">
+                                <div class="col-md-6">
+                                    <p>Dessert</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        
+                                        <input type="number" class="form-control dessert_bill_user" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        
+                                      </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row mt-2">
+                                <div class="col-md-6">
+                                    <p>Drinks</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        
+                                        <input type="number" class="form-control drink_bill_user" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        
+                                      </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row mt-2">
+                                <div class="col-md-6">
+                                    <p>Vegetarian cost</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        
+                                        <input type="number" class="form-control vegetarian_bill_user" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        
+                                      </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row mt-2">
+                                <div class="col-md-6">
+                                    <p>Non-vegetarian cost</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        
+                                        <input type="number" class="form-control non_vegetarian_bill_user" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        
+                                      </div>
+                                </div>
+
+                            </div>
+
+                            <div class="text-center">
+                                <button type="button" class="btn btn-primary px-5" id="calculate">Calculate</button>
+                            </div>
+
+                            
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+   
 
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
@@ -459,7 +1019,7 @@
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
-  
+    
 
 </body>
 
