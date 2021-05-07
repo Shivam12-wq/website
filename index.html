@@ -29,7 +29,7 @@
 
 </head>
 
-<body >
+<body style="background: url(images/background_image.jpg) no-repeat fixed;background-size: cover;padding-bottom: 30px;">
 
 
 
@@ -81,7 +81,7 @@
                                             <tr>
 
                                                 <td>
-                                                    <img src="images/thumb4.jpg" id="image1" style="width: 150px;"
+                                                    <img src="images/thumb1.jpg" id="image1" style="width: 150px;"
                                                         alt="">
                                                 </td>
                                             </tr>
@@ -159,7 +159,7 @@
                                             <tr>
 
                                                 <td>
-                                                    <img src="images/thumb4.jpg" id="image2" style="width: 150px;"
+                                                    <img src="images/thumb1.jpg" id="image2" style="width: 150px;"
                                                         alt="">
                                                 </td>
                                             </tr>
@@ -234,7 +234,7 @@
                                             <tr>
 
                                                 <td>
-                                                    <img src="images/thumb4.jpg" id="image3" style="width: 150px;"
+                                                    <img src="images/thumb1.jpg" id="image3" style="width: 150px;"
                                                         alt="">
                                                 </td>
                                             </tr>
@@ -309,7 +309,7 @@
                                             <tr>
 
                                                 <td>
-                                                    <img src="images/thumb4.jpg" id="image4" style="width: 150px;"
+                                                    <img src="images/thumb1.jpg" id="image4" style="width: 150px;"
                                                         alt="">
                                                 </td>
                                             </tr>
@@ -384,7 +384,7 @@
                                             <tr>
 
                                                 <td>
-                                                    <img src="images/thumb4.jpg" id="image5" style="width: 150px;"
+                                                    <img src="images/thumb1.jpg" id="image5" style="width: 150px;"
                                                         alt="">
                                                 </td>
                                             </tr>
@@ -1019,7 +1019,628 @@
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
-    
+    <script>
+
+
+
+
+
+        $(document).ready(function () {
+
+            var starter = [{ name: "Arancini", discription: "Though not as popular as pasta and pizza in Italy, these little fried rice balls are seriously to die for.", foodtype: "vegetarian", price: "350" }, { name: "Escudella", discription: "Known as Andorra's national dish,  is a filling stew made with pasta and tons of meat.", foodtype: "non-vegetarian", price: "565" }, { name: "Strudel", discription: "Strudel made of crisp dough with delicate layers can actually have many different kinds of fillings.", foodtype: "non-vegetarian", price: "645" }, { name: "Dolma", discription: "Cabbage or grape leaves are wrapped around rice and minced meat and cooked in olive oil.", foodtype: "non-vegetarian", price: "245" }];
+
+            var main = [{ name: "Potato Pancakes", discription: "Take grated potatoes, mix them with egg and minced onion, fry them up, and you have the delicious draniki.", foodtype: "vegeterian", price: "236" }, { name: "Smørrebrød", discription: "Smørrebrød is a conventional Danish platter that is simple and filling. ", foodtype: "non-vegetarian", price: "175" }, { name: "Châteaubriand", discription: "This simple, yet exquisite dish takes its name from a French author, diplomat and statesman François-René, Vicomte de Chateaubriand.", foodtype: "non-vegetarian", price: "455" }, { name: "Crumb-Fried Chicken", discription: "Recipe by Chef Niru GuptaWho doesn’t love fried chicken? Crunchy, crispy and just divine - one can’t get enough of this classic crumb-fried chicken spruced up with a zingy dip.", foodtype: "non-vegetarian", price: "555" }];
+
+            var dessert = [{ name: "DEVIL'S FOOD CAKE", discription: "This chocolate cake is absolutely the best we have ever had. It is so moist and rich that I never make anything else!", price: "130" }, { name: "LEMON SOUFFLES", discription: "Served in a lemon, these personal desserts are both sweet and sophisticated.", price: "195" }, { name: "BAKLAVA", discription: "These are every bit as good as the most delicious baklava I've bought in Greek cake shops and in restaurants. These are just so divinely yummy!", price: "345" }, { name: "CHOCOLATE FONDUE", discription: "This is an amazingly dark, rich and sinful fondue with a lot less fat. Make sure to use the best quality chocolate you can get your hands on, since that's the main flavor here.", price: "175" }];
+
+            var drink = [{ name: "KOMPOT ", discription: "Kompot, which is basically, stewed fruit, is a traditional dessert beverage originated from Russia.", price: "45" }, { name: "HORCHATA", discription: "Of course, you’re familiar with the famous alcoholic Spanish drinks like sangria and wine, but what many people don’t know is that there are a lot more than that.", price: "75" }, { name: "APFELSCHORLE", discription: "Apfelschorle is a popular non-alcoholic German drink made with a combination of sparkling water and apple juice. ", price: "35" }, { name: "APFELSCHORLE", discription: "Apfelschorle is a popular non-alcoholic German drink made with a combination of sparkling water and apple juice.", price: "65" }, { name: "HOT MULLED CIDER", discription: "The UK is popular for traditional English pubs and bars.", price: "85" }];
+
+
+            $('#starterlabel1').text(starter[0].name);
+
+            $('#starterlabel2').text(starter[1].name);
+
+            $('#starterlabel3').text(starter[2].name);
+
+            $('#starterlabel4').text(starter[3].name);
+
+
+
+            $('#startercheck1').val(starter[0].name);
+
+            $('#startercheck2').val(starter[1].name);
+
+            $('#startercheck3').val(starter[2].name);
+
+            $('#startercheck4').val(starter[3].name);
+
+
+
+
+
+            $('#mainlabel1').text(main[0].name);
+
+            $('#mainlabel2').text(main[1].name);
+
+            $('#mainlabel3').text(main[2].name);
+
+            $('#mainlabel4').text(main[3].name);
+
+
+
+            $('#maincheck1').val(main[0].name);
+
+            $('#maincheck2').val(main[1].name);
+
+            $('#maincheck3').val(main[2].name);
+
+            $('#maincheck4').val(main[3].name);
+
+
+
+
+
+            $('#dessertlabel1').text(dessert[0].name);
+
+            $('#dessertlabel2').text(dessert[1].name);
+
+            $('#dessertlabel3').text(dessert[2].name);
+
+            $('#dessertlabel4').text(dessert[3].name);
+
+
+
+            $('#dessertcheck1').val(dessert[0].name);
+
+            $('#dessertcheck2').val(dessert[1].name);
+
+            $('#dessertcheck3').val(dessert[2].name);
+
+            $('#dessertcheck4').val(dessert[3].name);
+
+
+           
+
+
+
+
+            $('#drinklabel1').text(drink[0].name);
+
+            $('#drinklabel2').text(drink[1].name);
+
+            $('#drinklabel3').text(drink[2].name);
+
+            $('#drinklabel4').text(drink[3].name);
+
+
+
+            $('#drinkcheck1').val(drink[0].name);
+
+            $('#drinkcheck2').val(drink[1].name);
+
+            $('#drinkcheck3').val(drink[2].name);
+
+            $('#drinkcheck4').val(drink[3].name);
+
+
+            
+
+
+
+
+
+
+
+
+
+            $.ajax({
+                
+                url: 'https://randomuser.me/api/?results=5',
+                dataType: 'json',
+                success: function (data) {
+
+
+
+                    var image_1_src = data.results[0].picture.large;
+
+                    var image_2_src = data.results[1].picture.large;
+
+                    var image_3_src = data.results[2].picture.large;
+
+                    var image_4_src = data.results[3].picture.large;
+
+                    var image_5_src = data.results[4].picture.large;
+
+
+
+                    $('#image1').attr('src', image_1_src);
+
+                    $('#image2').attr('src', image_2_src);
+
+                    $('#image3').attr('src', image_3_src);
+
+                    $('#image4').attr('src', image_4_src);
+
+                    $('#image5').attr('src', image_5_src);
+
+
+
+
+                    var name_user_1 = data.results[0].name.first;
+
+                    var name_user_2 = data.results[1].name.first;
+
+                    var name_user_3 = data.results[2].name.first;
+
+                    var name_user_4 = data.results[3].name.first;
+
+                    var name_user_5 = data.results[4].name.first;
+
+
+
+                    $('#name1').text(name_user_1);
+
+                    $('#name2').text(name_user_2);
+
+                    $('#name3').text(name_user_3);
+
+                    $('#name4').text(name_user_4);
+
+                    $('#name5').text(name_user_5);
+
+
+
+                    var password_user_1 = data.results[0].login.password;
+
+                    var password_user_2 = data.results[1].login.password;
+
+                    var password_user_3 = data.results[2].login.password;
+
+                    var password_user_4 = data.results[3].login.password;
+
+                    var password_user_5 = data.results[4].login.password;
+
+
+
+
+
+                    var phone_user_1 = data.results[0].phone;
+
+                    var phone_user_2 = data.results[1].phone;
+
+                    var phone_user_3 = data.results[2].phone;
+
+                    var phone_user_4 = data.results[3].phone;
+
+                    var phone_user_5 = data.results[4].phone;
+
+
+
+                    $('#phone1').text(phone_user_1);
+
+                    $('#phone2').text(phone_user_2);
+
+                    $('#phone3').text(phone_user_3);
+
+                    $('#phone4').text(phone_user_4);
+
+                    $('#phone5').text(phone_user_5);
+
+
+
+                    var date_user_1 = data.results[0].dob.date;
+
+                    var date_user_2 = data.results[1].dob.date;
+
+                    var date_user_3 = data.results[2].dob.date;
+
+                    var date_user_4 = data.results[3].dob.date;
+
+                    var date_user_5 = data.results[4].dob.date;
+
+
+
+
+                    $('#dob1').text(date_user_1);
+
+                    $('#dob2').text(date_user_2);
+
+                    $('#dob3').text(date_user_3);
+
+                    $('#dob4').text(date_user_4);
+
+                    $('#dob5').text(date_user_5);
+
+
+
+
+
+
+                    var age_user_1 = data.results[0].dob.age;
+
+                    var age_user_2 = data.results[1].dob.age;
+
+                    var age_user_3 = data.results[2].dob.age;
+
+                    var age_user_4 = data.results[3].dob.age;
+
+                    var age_user_5 = data.results[4].dob.age;
+
+
+
+
+                    $('#age1').text(age_user_1);
+
+                    $('#age2').text(age_user_2);
+
+                    $('#age3').text(age_user_3);
+
+                    $('#age4').text(age_user_4);
+
+                    $('#age5').text(age_user_5);
+
+
+
+
+
+                    var email_user_1 = data.results[0].email;
+
+                    var email_user_2 = data.results[1].email;
+
+                    var email_user_3 = data.results[2].email;
+
+                    var email_user_4 = data.results[3].email;
+
+                    var email_user_5 = data.results[4].email;
+
+
+
+                    $('#email1').text(email_user_1);
+
+                    $('#email2').text(email_user_2);
+
+                    $('#email3').text(email_user_3);
+
+                    $('#email4').text(email_user_4);
+
+                    $('#email5').text(email_user_5);
+
+
+
+
+
+                    var gender_user_1 = data.results[0].gender;
+
+                    var gender_user_2 = data.results[1].gender;
+
+                    var gender_user_3 = data.results[2].gender;
+
+                    var gender_user_4 = data.results[3].gender;
+
+                    var gender_user_5 = data.results[4].gender;
+
+
+
+
+                    $('#gender1').text(gender_user_1);
+
+                    $('#gender2').text(gender_user_2);
+
+                    $('#gender3').text(gender_user_3);
+
+                    $('#gender4').text(gender_user_4);
+
+                    $('#gender5').text(gender_user_5);
+
+
+
+
+
+                    var city_user_1 = data.results[0].location.city;
+
+                    var city_user_2 = data.results[1].location.city;
+
+                    var city_user_3 = data.results[2].location.city;
+
+                    var city_user_4 = data.results[3].location.city;
+
+                    var city_user_5 = data.results[4].location.city;
+
+
+                    $('#city1').text(city_user_1);
+
+                    $('#city2').text(city_user_2);
+
+                    $('#city3').text(city_user_3);
+
+                    $('#city4').text(city_user_4);
+
+                    $('#city5').text(city_user_5);
+
+
+
+
+
+                    var country_user_1 = data.results[0].location.country;
+
+                    var country_user_2 = data.results[1].location.country;
+
+                    var country_user_3 = data.results[2].location.country;
+
+                    var country_user_4 = data.results[3].location.country;
+
+                    var country_user_5 = data.results[4].location.country;
+
+
+
+                    $('#country1').text(country_user_1);
+
+                    $('#country2').text(country_user_2);
+
+                    $('#country3').text(country_user_3);
+
+                    $('#country4').text(country_user_4);
+
+                    $('#country5').text(country_user_5);
+
+
+
+
+
+
+
+                    var postcode_user_1 = data.results[0].location.postcode;
+
+                    var postcode_user_2 = data.results[1].location.postcode;
+
+                    var postcode_user_3 = data.results[2].location.postcode;
+
+                    var postcode_user_4 = data.results[3].location.postcode;
+
+                    var postcode_user_5 = data.results[4].location.postcode;
+
+
+
+
+                    $('#post1').text(postcode_user_1);
+
+                    $('#post2').text(postcode_user_2);
+
+                    $('#post3').text(postcode_user_3);
+
+                    $('#post4').text(postcode_user_4);
+
+                    $('#post5').text(postcode_user_5);
+
+
+
+
+
+
+
+
+                }
+            });
+
+
+            // button-submit
+
+
+            // button-submit
+            $("#calculate").click(function () {
+
+                // $("#starters").val();
+                var starter_name = $('input[name="starterRadio"]:checked').val();
+
+                var main_name = $('input[name="mainRadio"]:checked').val();
+
+                var dessert_name = $('input[name="dessertRadio"]:checked').val();
+
+                var drink_name = $('input[name="drinkRadio"]:checked').val();
+
+
+                var vegetarian = 0;
+                var non_vegetarian = 0;
+
+
+                var i;
+                for (i = 0; i < 4; i++) {
+
+
+                    if (starter_name == starter[i].name) {
+                        starter_price = starter[i].price;
+                        starter_type = starter[i].foodtype;
+
+                        if (starter_type == "vegetarian") {
+                            vegetarian = parseFloat(vegetarian) + parseFloat(starter_price);
+                        } else {
+                            non_vegetarian = parseFloat(non_vegetarian) + parseFloat(starter_price);
+                        }
+
+                        var quantity="";
+
+                        if ($('#startercheck1').is(':checked')) {
+                            var quantity = $('#starterinput1').val();
+                         } else if ($('#startercheck2').is(':checked')) {
+                            var quantity = $('#starterinput2').val();
+                         } else if ($('#startercheck3').is(':checked')) {
+                            var quantity = $('#starterinput3').val();
+                         } else if ($('#startercheck4').is(':checked')) {
+                            var quantity = $('#starterinput4').val();
+                           
+                         }
+
+                         if (quantity == "") {
+                            quantity = 1;
+                         }
+
+                         starter_price = starter_price * quantity;
+
+                        
+
+                    }
+
+                    if (main_name == main[i].name) {
+                        main_price = main[i].price;
+                        main_type = main[i].foodtype;
+
+                        if (main_type == "vegetarian") {
+                            vegetarian = parseFloat(vegetarian) + parseFloat(main_price);
+                        } else {
+                            non_vegetarian = parseFloat(non_vegetarian) + parseFloat(main_price);
+                        }
+
+                        var quantity="";
+
+                        if ($('#maincheck1').is(':checked')) {
+                            var quantity = $('#maininput1').val();
+                         } else if ($('#maincheck2').is(':checked')) {
+                            var quantity = $('#maininput2').val();
+                         } else if ($('#maincheck3').is(':checked')) {
+                            var quantity = $('#maininput3').val();
+                         } else if ($('#maincheck4').is(':checked')) {
+                            var quantity = $('#maininput4').val();
+                           
+                         }
+
+                         if (quantity == "") {
+                            quantity = 1;
+                         }
+
+                         main_price = main_price * quantity;
+
+                    }
+
+                    if (dessert_name == dessert[i].name) {
+
+                        dessert_price = dessert[i].price;
+
+                        var quantity="";
+
+                        if ($('#dessertcheck1').is(':checked')) {
+                            var quantity = $('#dessertinput1').val();
+                        } else if ($('#dessertcheck2').is(':checked')) {
+                            var quantity = $('#dessertinput2').val();
+                        } else if ($('#dessertcheck3').is(':checked')) {
+                            var quantity = $('#dessertinput3').val();
+                        } else if ($('#dessertcheck4').is(':checked')) {
+                            var quantity = $('#dessertinput4').val();
+                        
+                        }
+
+                        if (quantity == "") {
+                            quantity = 1;
+                        }
+
+                        dessert_price = dessert_price * quantity;
+
+
+
+                    }
+
+                    if (drink_name == drink[i].name) {
+                        drink_price = drink[i].price;
+
+                        var quantity="";
+
+                        if ($('#drinkcheck1').is(':checked')) {
+                            var quantity = $('#drinkinput1').val();
+                        } else if ($('#drinkcheck2').is(':checked')) {
+                            var quantity = $('#drinkinput2').val();
+                        } else if ($('#drinkcheck3').is(':checked')) {
+                            var quantity = $('#drinkinput3').val();
+                        } else if ($('#drinkcheck4').is(':checked')) {
+                            var quantity = $('#drinkinput4').val();
+                        
+                        }
+
+                        if (quantity == "") {
+                            quantity = 1;
+                        }
+
+                        drink_price = drink_price * quantity;
+
+                        
+                    }
+
+
+
+                }
+
+
+
+
+
+                var total_price = parseFloat(starter_price) + parseFloat(main_price) + parseFloat(dessert_price) + parseFloat(drink_price);
+
+
+                $(".total_bill_user").val("");
+                $(".total_bill_user").val(total_price);
+
+                $(".starter_bill_user").val("");
+                $(".starter_bill_user").val(starter_price);
+
+                $(".main_bill_user").val("");
+                $(".main_bill_user").val(main_price);
+
+                $(".dessert_bill_user").val("");
+                $(".dessert_bill_user").val(dessert_price);
+
+                $(".drink_bill_user").val("");
+                $(".drink_bill_user").val(drink_price);
+
+
+                $(".vegetarian_bill_user").val("");
+                $(".vegetarian_bill_user").val(vegetarian);
+
+                $(".non_vegetarian_bill_user").val("");
+                $(".non_vegetarian_bill_user").val(non_vegetarian);
+
+
+
+
+            });
+
+
+
+
+
+
+            $("#check_password").click(function(){
+
+                
+                
+
+                var myInput = document.getElementById("password_input");
+
+                
+                var lowerCaseLetters = /[a-z]/g;
+
+                var upperCaseLetters = /[A-Z]/g;
+
+                var numbers = /[0-9]/g;
+
+                var specialCharacter = /[!@#$%^&*]/g;
+
+             
+                if(myInput.value.match(lowerCaseLetters) && myInput.value.match(upperCaseLetters) && myInput.value.match(numbers) && myInput.value.length >= 8 && myInput.value.match(specialCharacter)) {
+                    
+                    $("#valid_password").css("display","block");
+                    $("#invalid_password").css("display","none");
+                } else {
+
+                    $("#valid_password").css("display","none");
+                    $("#invalid_password").css("display","block");
+                }
+                 
+            });
+
+            
+
+
+        });
+
+    </script>
 
 </body>
 
